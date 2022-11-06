@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JS Code Quiz</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <div class="topRow">
+      <p class="view">View High Scores</p>
+      <p>Time:<span class="timeNum"></span></p>
+    </div>
+    <main>
+      <section class="home">
+        <h1>JavaScript Coding Quiz Challenge</h1>
+        <p>
+          Try to answer the following code-related questions within the time
+          limit. Keep in mind that incorrect answers will penalize your
+          score/time by ten seconds!
+        </p>
+        <button type="button" name="start" id="startB">Start Quiz</button>
+      </section>
+      <section class="questions">
+        <h2 class="question">First Question</h2>
+        <div class="qBox">Testing</div>
+      </section>
+    </main>
+    <dialog class="modal" id="modal">
+      <h2>High Scores</h2>
+
+      <div class="highScores">
+        
+      </div>
+      <button name="back" id="back">Go back</button>
+      <button name="clear" id="clear">Clear high scores</button>
+    </dialog>
+    <script src="./assets/script.js"></script>
+  </body>
+</html>
