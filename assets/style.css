@@ -1,0 +1,77 @@
+body {
+  box-sizing: border-box;
+  font-size: 30px;
+  background-color: rgb(194, 189, 189);
+  margin: 0;
+}
+
+.topRow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  background-color: rgb(226, 215, 215);
+}
+
+section {
+  text-align: center;
+}
+
+section > p {
+  max-width: 700px;
+  margin: 50px auto;
+}
+
+#startB {
+  font-size: 1.8rem;
+}
+
+.topRow p:first-child {
+  color: purple;
+}
+
+.topRow p:first-child:hover {
+  border-bottom: 2px solid purple;
+  font-weight: 600;
+  cursor: pointer;
+}
+.topRow p:first-child:active {
+  font-weight: 400;
+}
+
+h1 {
+  margin: 10px auto;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+main {
+  margin-top: 20px;
+}
+
+.modal {
+  min-height: 350px;
+  min-width: 500px;
+  text-align: center;
+}
+
+.modal::backdrop {
+  background: linear-gradient(45deg, violet, purple);
+  opacity: 0.4;
+}
+
+.highScores {
+  height: 200px;
+  overflow: auto;
+  text-align: left;
+}
+
+.questions {
+  display: none;
+}
+
+.view {
+  margin-left: 100px;
+}
+
+.topRow > :nth-child(2) {
+  margin-right: 100px;
+}
