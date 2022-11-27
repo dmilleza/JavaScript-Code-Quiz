@@ -9,32 +9,45 @@
   <body>
     <div class="topRow">
       <p class="view">View High Scores</p>
-      <p>Time:<span class="timeNum"></span></p>
+      <p>Time: <span class="timeNum"></span></p>
     </div>
     <main>
       <section class="home">
         <h1>JavaScript Coding Quiz Challenge</h1>
         <p>
           Try to answer the following code-related questions within the time
-          limit. Keep in mind that incorrect answers will penalize your
-          score/time by ten seconds!
+          limit. Keep in mind that incorrect answers will penalize your time by
+          ten seconds!
         </p>
         <button type="button" name="start" id="startB">Start Quiz</button>
       </section>
       <section class="questions">
-        <h2 class="question">First Question</h2>
-        <div class="qBox">Testing</div>
+        <h2 class="question"></h2>
+        <div class="qBox"></div>
+        <hr />
+        <p class="feedback"></p>
+      </section>
+      <section class="done">
+        <h3>All done!</h3>
+        <p>Your final score is: <span class="score"></span></p>
+        <br />
+        <p>Enter your initials:</p>
+        <input type="text" name="initials" class="initials" />
+        <button class="submit" name="initials" onclick="addScoreInfo()">
+          Submit
+        </button>
       </section>
     </main>
     <dialog class="modal" id="modal">
       <h2>High Scores</h2>
 
-      <div class="highScores">
-        
-      </div>
+      <div class="highScores"></div>
       <button name="back" id="back">Go back</button>
-      <button name="clear" id="clear">Clear high scores</button>
+      <button name="clear" id="clear" onclick="clearScores()">
+        Clear Scores
+      </button>
     </dialog>
+    <script src="./assets/questions.js"></script>
     <script src="./assets/script.js"></script>
   </body>
 </html>

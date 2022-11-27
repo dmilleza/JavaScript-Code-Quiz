@@ -3,6 +3,7 @@ body {
   font-size: 30px;
   background-color: rgb(194, 189, 189);
   margin: 0;
+  height: 800px;
 }
 
 .topRow {
@@ -12,11 +13,7 @@ body {
   background-color: rgb(226, 215, 215);
 }
 
-section {
-  text-align: center;
-}
-
-section > p {
+.home > p {
   max-width: 700px;
   margin: 50px auto;
 }
@@ -25,16 +22,16 @@ section > p {
   font-size: 1.8rem;
 }
 
-.topRow p:first-child {
+.view {
   color: purple;
 }
 
-.topRow p:first-child:hover {
+.view:hover {
   border-bottom: 2px solid purple;
   font-weight: 600;
   cursor: pointer;
 }
-.topRow p:first-child:active {
+.view:active {
   font-weight: 400;
 }
 
@@ -46,11 +43,12 @@ h1 {
 main {
   margin-top: 20px;
 }
-
+.initials {
+  font-size: 0.6em;
+}
 .modal {
   min-height: 350px;
   min-width: 500px;
-  text-align: center;
 }
 
 .modal::backdrop {
@@ -66,6 +64,9 @@ main {
 
 .questions {
   display: none;
+  width: 600px;
+  margin: 0 auto;
+  overflow: scroll;
 }
 
 .view {
@@ -74,4 +75,88 @@ main {
 
 .topRow > :nth-child(2) {
   margin-right: 100px;
+}
+
+.modal > h2 {
+  text-align: center;
+}
+
+#back,
+#clear {
+  font-size: 1.3rem;
+}
+
+#back {
+  margin-left: 110px;
+}
+
+hr {
+  max-width: 200px;
+  border: 2px solid rgb(119, 118, 118);
+  display: none;
+}
+
+.home {
+  text-align: center;
+}
+
+.done {
+  max-width: 600px;
+  margin: 50px auto;
+  display: none;
+}
+
+.done > p {
+  display: inline;
+}
+
+.done > button {
+  background-color: blueviolet;
+  border-radius: 20%;
+  color: white;
+}
+
+.quesB {
+  font-size: 2rem;
+  background-color: rgb(164, 6, 164);
+  display: block;
+  width: 100%;
+  margin: 10px auto;
+  text-align: left;
+  cursor: pointer;
+}
+
+.quesBc {
+  font-size: 2rem;
+  background-color: rgb(244, 140, 244);
+  display: block;
+  width: 100%;
+  margin: 10px auto;
+  text-align: left;
+}
+
+.quesBw {
+  font-size: 2rem;
+  background-color: rgb(209, 54, 54);
+  display: block;
+  width: 100%;
+  margin: 10px auto;
+  text-align: left;
+}
+
+.feedback {
+  padding: 0;
+  margin: 0 auto;
+  min-width: 50px;
+  text-align: center;
+  display: none;
+}
+
+.playerInfo {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 10px auto;
+  font-size: 0.8em;
+  max-height: 50px;
 }
